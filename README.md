@@ -494,3 +494,188 @@ html```
   </div>
 </div>
 ```
+
+**Typ 14 – Minimalistyczny "Health Score" Gauge (statyczny SVG + liczba)**
+
+```html
+<div style="width:100%; background:#0f172a; border-radius:12px; border:1px solid #334155; padding:28px; font-family:system-ui,sans-serif; color:#e2e8f0; box-sizing:border-box; margin:32px 0;">
+  <div style="font-size:24px; font-weight:700; color:#cbd5e1; margin-bottom:24px; text-align:center;">
+    Overall Health Score
+  </div>
+  <div style="display:flex; justify-content:center; align-items:center; flex-direction:column; gap:16px;">
+    <svg width="140" height="140" viewBox="0 0 140 140">
+      <circle cx="70" cy="70" r="64" fill="none" stroke="#334155" stroke-width="12"/>
+      <circle cx="70" cy="70" r="64" fill="none" stroke="#34d399" stroke-width="12" stroke-dasharray="402" stroke-dashoffset="80" transform="rotate(-90 70 70)"/>
+      <text x="70" y="78" text-anchor="middle" font-size="48" font-weight="700" fill="#34d399">94</text>
+    </svg>
+    <div style="font-size:18px; color:#94a3b8;">Excellent • 94/100</div>
+  </div>
+</div>
+```
+
+**Typ 15 – Compact "Last 5 Actions" List z timestampami**
+
+```html
+<div style="width:100%; background:#0f172a; border-radius:12px; border:1px solid #334155; padding:28px; font-family:system-ui,sans-serif; color:#e2e8f0; box-sizing:border-box; margin:32px 0;">
+  <div style="font-size:22px; font-weight:700; color:#cbd5e1; margin-bottom:20px;">
+    Last Actions
+  </div>
+  <div style="display:flex; flex-direction:column; gap:16px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 16px; background:#1e293b; border-radius:8px; border:1px solid #334155;">
+      <div>
+        <div style="font-size:15px; font-weight:500;">Cache flushed</div>
+        <div style="font-size:13px; color:#94a3b8;">Manual trigger</div>
+      </div>
+      <div style="font-size:13px; color:#94a3b8; text-align:right;">07:59</div>
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 16px; background:#1e293b; border-radius:8px; border:1px solid #334155;">
+      <div>
+        <div style="font-size:15px; font-weight:500;">Index optimized</div>
+        <div style="font-size:13px; color:#94a3b8;">Automatic</div>
+      </div>
+      <div style="font-size:13px; color:#94a3b8; text-align:right;">07:45</div>
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 16px; background:#1e293b; border-radius:8px; border:1px solid #334155;">
+      <div>
+        <div style="font-size:15px; font-weight:500;">User login</div>
+        <div style="font-size:13px; color:#94a3b8;">@Sernik_Js</div>
+      </div>
+      <div style="font-size:13px; color:#94a3b8; text-align:right;">06:12</div>
+    </div>
+  </div>
+</div>
+```
+
+**Typ 16 – "Quick Links" Bar (płaski, z hover-em)**
+
+```html
+<div style="width:100%; background:#0f172a; border-radius:12px; border:1px solid #334155; padding:20px 28px; font-family:system-ui,sans-serif; margin:32px 0; display:flex; flex-wrap:wrap; gap:16px; justify-content:center;">
+  <a href="#" style="padding:10px 20px; background:#1e293b; border:1px solid #334155; border-radius:8px; font-size:14px; color:#94a3b8; text-decoration:none; transition:all 0.18s; cursor:pointer;">
+    View Logs
+  </a>
+  <a href="#" style="padding:10px 20px; background:#1e293b; border:1px solid #334155; border-radius:8px; font-size:14px; color:#94a3b8; text-decoration:none; transition:all 0.18s; cursor:pointer;">
+    Metrics Dashboard
+  </a>
+  <a href="#" style="padding:10px 20px; background:#1e293b; border:1px solid #334155; border-radius:8px; font-size:14px; color:#94a3b8; text-decoration:none; transition:all 0.18s; cursor:pointer;">
+    Configuration
+  </a>
+  <a href="#" style="padding:10px 20px; background:#1e293b; border:1px solid #334155; border-radius:8px; font-size:14px; color:#94a3b8; text-decoration:none; transition:all 0.18s; cursor:pointer;">
+    Alerts History
+  </a>
+  <style>
+    a[style*="padding:10px 20px"]:hover {
+      background:#253549 !important;
+      color:#e2e8f0 !important;
+      border-color:#4b5563 !important;
+      box-shadow:0 0 12px rgba(99,102,241,0.08) !important;
+    }
+  </style>
+</div>
+```
+
+```html
+<div style="width:100%; background:#0f172a; border-radius:12px; border:1px solid #334155; padding:32px; font-family:system-ui,sans-serif; color:#e2e8f0; box-sizing:border-box; margin:32px 0;">
+  <div style="font-size:26px; font-weight:700; color:#cbd5e1; margin-bottom:20px;">
+    Node Hannover-03
+  </div>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:24px;">
+    <div>
+      <div style="font-size:14px; color:#94a3b8; margin-bottom:6px;">Status</div>
+      <div style="font-size:28px; font-weight:700; color:#34d399;">Operational</div>
+      <div style="font-size:14px; color:#94a3b8; margin-top:4px;">Since 19 days</div>
+    </div>
+
+    <div>
+      <div style="font-size:14px; color:#94a3b8; margin-bottom:6px;">Load Average</div>
+      <div style="font-size:28px; font-weight:700; color:#60a5fa;">0.42 / 0.38 / 0.31</div>
+      <div style="font-size:14px; color:#94a3b8; margin-top:4px;">1 / 5 / 15 min</div>
+    </div>
+
+    <div>
+      <div style="font-size:14px; color:#94a3b8; margin-bottom:6px;">Temperature</div>
+      <div style="font-size:28px; font-weight:700; color:#fbbf24;">48°C</div>
+      <div style="font-size:14px; color:#94a3b8; margin-top:4px;">CPU avg</div>
+    </div>
+  </div>
+
+  <div style="margin-top:28px; padding:16px; background:#1e293b; border-radius:10px; border:1px solid #334155;">
+    <div style="font-size:14px; color:#94a3b8; margin-bottom:12px;">Last Check</div>
+    <div style="font-size:13px; font-family:ui-monospace, monospace; color:#cbd5e1; line-height:1.6;">
+      08:01 CET • All services healthy • No pending updates
+    </div>
+  </div>
+</div>
+```
+
+```html
+<div style="width:100%; background:#0f172a; border-radius:12px; border:1px solid #334155; padding:28px; font-family:system-ui,sans-serif; color:#e2e8f0; box-sizing:border-box; margin:32px 0;">
+  <div style="font-size:24px; font-weight:700; color:#cbd5e1; margin-bottom:20px;">
+    Quick Commands
+  </div>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px;">
+    <div style="padding:16px; background:#1e293b; border-radius:10px; border:1px solid #334155; cursor:pointer; transition:all 0.18s;">
+      <div style="font-size:15px; font-weight:500; color:#60a5fa; margin-bottom:4px;">$ restart</div>
+      <div style="font-size:13px; color:#94a3b8;">Restart all services</div>
+    </div>
+
+    <div style="padding:16px; background:#1e293b; border-radius:10px; border:1px solid #334155; cursor:pointer; transition:all 0.18s;">
+      <div style="font-size:15px; font-weight:500; color:#34d399; margin-bottom:4px;">$ clear-cache</div>
+      <div style="font-size:13px; color:#94a3b8;">Flush Redis & OPCache</div>
+    </div>
+
+    <div style="padding:16px; background:#1e293b; border-radius:10px; border:1px solid #334155; cursor:pointer; transition:all 0.18s;">
+      <div style="font-size:15px; font-weight:500; color:#fbbf24; margin-bottom:4px;">$ diag</div>
+      <div style="font-size:13px; color:#94a3b8;">Run full health check</div>
+    </div>
+
+    <div style="padding:16px; background:#1e293b; border-radius:10px; border:1px solid #334155; cursor:pointer; transition:all 0.18s;">
+      <div style="font-size:15px; font-weight:500; color:#a78bfa; margin-bottom:4px;">$ logs</div>
+      <div style="font-size:13px; color:#94a3b8;">Tail last 100 lines</div>
+    </div>
+  </div>
+
+  <style>
+    div[style*="cursor:pointer"]:hover {
+      background:#253549 !important;
+      border-color:#4b5563 !important;
+      box-shadow:0 0 12px rgba(99,102,241,0.08) !important;
+    }
+  </style>
+</div>
+```
+
+```html
+<div style="width:100%; background:#0f172a; border-radius:12px; border:1px solid #334155; padding:28px; font-family:system-ui,sans-serif; color:#e2e8f0; box-sizing:border-box; margin:32px 0;">
+  <div style="font-size:24px; font-weight:700; color:#cbd5e1; margin-bottom:20px;">
+    Network Latency
+  </div>
+
+  <div style="text-align:center; padding:32px 0; background:#1e293b; border-radius:10px; border:1px solid #334155; position:relative;">
+    <div style="font-size:18px; color:#94a3b8; margin-bottom:8px;">Primary Region</div>
+    <div style="font-size:36px; font-weight:700; color:#34d399;">Germany Central (Hannover)</div>
+    <div style="font-size:15px; color:#94a3b8; margin-top:12px;">
+      Avg latency to clients: <strong style="color:#60a5fa;">28 ms</strong>
+    </div>
+    <div style="margin-top:20px; font-size:13px; color:#64748b;">
+      (Placeholder – real map visualization would require SVG or image)
+    </div>
+  </div>
+</div>
+```
+
+```html
+<div style="width:100%; background:#0f172a; border-top:1px solid #334155; padding:24px 28px; font-family:system-ui,sans-serif; color:#94a3b8; font-size:14px; display:flex; flex-direction:column; align-items:center; gap:16px; margin:40px 0;">
+  <div style="display:flex; gap:32px; flex-wrap:wrap; justify-content:center;">
+    <div>🟢 <strong style="color:#34d399;">Operational</strong></div>
+    <div>🌍 Hannover, DE</div>
+    <div>⏱️ 19d 10h uptime</div>
+    <div>v4.2.1</div>
+  </div>
+
+  <div style="font-size:13px; color:#64748b; text-align:center;">
+    Node: node-hannover-03 • IP: 172.16.42.117 • Monitored by SuperGrok
+  </div>
+</div>
+```
