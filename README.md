@@ -679,3 +679,98 @@ html```
   </div>
 </div>
 ```
+
+```html
+<div style="width:100%; background:#0f172a; border-radius:8px; border:1px solid #334155; padding:20px; font-family:system-ui,sans-serif; color:#e2e8f0; margin:24px 0;">
+  <div style="font-size:14px; color:#94a3b8; margin-bottom:6px;">
+    Uptime
+  </div>
+  <div style="font-size:32px; font-weight:700; color:#34d399;">
+    19d 11h
+  </div>
+</div>
+```
+
+```html
+<div style="width:100%; font-family:system-ui,sans-serif; color:#e2e8f0; margin:24px 0;">
+  <div style="border-bottom:1px solid #334155; padding:12px 0; display:flex; justify-content:space-between;">
+    <div style="color:#94a3b8;">Hostname</div>
+    <div>node-hannover-03</div>
+  </div>
+  <div style="border-bottom:1px solid #334155; padding:12px 0; display:flex; justify-content:space-between;">
+    <div style="color:#94a3b8;">IP</div>
+    <div>172.16.42.117</div>
+  </div>
+  <div style="border-bottom:1px solid #334155; padding:12px 0; display:flex; justify-content:space-between;">
+    <div style="color:#94a3b8;">Location</div>
+    <div>Hannover, DE</div>
+  </div>
+  <div style="padding:12px 0; display:flex; justify-content:space-between;">
+    <div style="color:#94a3b8;">OS</div>
+    <div>Ubuntu 24.04</div>
+  </div>
+</div>
+```
+
+```html
+<div style="width:100%; margin:24px 0; font-family:system-ui,sans-serif; color:#e2e8f0;">
+  <div style="font-size:13px; color:#94a3b8;">Version</div>
+  <div style="font-size:18px; font-weight:600; color:#cbd5e1;">4.2.1</div>
+</div>
+```
+
+```html
+<div style="width:100%; margin:24px 0; font-family:system-ui,sans-serif; color:#e2e8f0;">
+  <div style="font-size:13px; color:#94a3b8; margin-bottom:8px;">Tags</div>
+  <div style="display:flex; flex-wrap:wrap; gap:8px;">
+    <span style="padding:4px 10px; background:#1e293b; border:1px solid #334155; font-size:13px; color:#94a3b8;">frontend</span>
+    <span style="padding:4px 10px; background:#1e293b; border:1px solid #334155; font-size:13px; color:#94a3b8;">api</span>
+    <span style="padding:4px 10px; background:#1e293b; border:1px solid #334155; font-size:13px; color:#94a3b8;">database</span>
+    <span style="padding:4px 10px; background:#1e293b; border:1px solid #334155; font-size:13px; color:#94a3b8;">monitoring</span>
+  </div>
+</div>
+```
+
+```html
+<div style="width:100%; margin:20px 0; font-family:system-ui,sans-serif; color:#e2e8f0; font-size:15px;">
+  <span style="color:#94a3b8;">Uptime: </span>
+  <span style="font-weight:600; color:#34d399;">19d 12h</span>
+</div>
+```
+
+```html
+<div style="width:100%; margin:24px 0; font-family:system-ui,sans-serif; color:#e2e8f0;">
+  <div style="margin-bottom:10px;">• Status: Operational</div>
+  <div style="margin-bottom:10px;">• Location: Hannover, DE</div>
+  <div style="margin-bottom:10px;">• Last check: 08:15 CET</div>
+  <div>• Version: 4.2.1</div>
+</div>
+```
+
+```html
+<div style="width:100%; margin:20px 0; font-family:system-ui,sans-serif; color:#e2e8f0;">
+  <div style="font-size:13px; color:#94a3b8;">Memory usage</div>
+  <div style="font-size:20px; font-weight:600;">6.4 GB / 64 GB</div>
+</div>
+```
+
+```html
+<div style="width:100%; margin:32px 0; font-family:system-ui,sans-serif; color:#94a3b8; font-size:13px; text-align:center; position:relative;">
+  <div style="position:absolute; left:0; right:0; top:50%; height:1px; background:#334155;"></div>
+  <span style="background:#0f172a; padding:0 16px; position:relative; z-index:1;">
+    System Info
+  </span>
+</div>
+```
+
+```html
+<div style="width:100%; margin:20px 0; font-family:system-ui,sans-serif; color:#e2e8f0; font-size:15px;">
+  Status: <span style="color:#34d399; font-weight:600;">OK</span>
+</div>
+```
+
+```html
+<div style="width:100%; margin:20px 0; font-family:ui-monospace, monospace; color:#e2e8f0; font-size:14px;">
+  node-hannover-03
+</div>
+```
