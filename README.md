@@ -1,7 +1,20 @@
 # Pragmatic-CSS
-Pragmatic HTML/CSS snippets for grok.com
+> Pragmatic HTML/CSS snippets for grok.com
 
-# Nice ones
+---
+
+# `SKILL.md` for Grok 4.3 Skills
+
+## Skill File
+<img width="1609" height="714" alt="image" src="https://github.com/user-attachments/assets/3c3af8f0-3ef9-4d83-8593-cbfb1125074b" />
+
+## Demo use
+<img width="902" height="824" alt="image" src="https://github.com/user-attachments/assets/448449e4-de37-4bf9-b82b-9ba769c6aa94" />
+
+
+---
+
+# Nice examples
 
 <img width="965" height="245" alt="image" src="https://github.com/user-attachments/assets/58613b2d-a293-4e16-900e-d5e2660efd0a" />
 
